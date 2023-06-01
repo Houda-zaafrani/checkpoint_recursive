@@ -1,0 +1,29 @@
+FUNCTION palindrome(fir,end : INTEGER ,str : ARRAY_OF STRING[6]): BOOLEAN
+VAR
+ i: INTEGER;
+BEGIN
+//reading af array str
+FOR i FROM 0 TO str.length-1  DO
+    str[i];
+END_FOR
+//initialaze the first and the ned of str to compare
+    fir:=i;
+    end:=length;
+//base case
+IF (str.length=0 OR str.length=1) THEN
+    RETURN -1;  
+ELSE
+  //begining of recursive case 
+    FOR i FROM 0 TO str.length-1  DO
+     IF (str.[init] =str.[end]) THEN
+       palindrome(str.[fir]+1,str[end-1-i]);
+
+        RETURN TRUE;
+            
+        ELSE
+        RETURN FALSE;
+     END_IF
+    END_FOR
+END_IF
+
+END
